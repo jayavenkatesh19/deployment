@@ -22,13 +22,13 @@ copyright = f"{datetime.date.today().year}, NVIDIA"
 author = "NVIDIA"
 
 # Single modifiable version for all of the docs - easier for future updates
-stable_version = "26.06"
-nightly_version = "26.08"
+stable_version = "26.08"
+nightly_version = "26.10"
 cuda_major = "13"  # drives container tags and pip wheel suffixes (cudf-cu13, ...)
 python_version = "3.13"  # Python version for conda commands
 cuda_tag = f"cuda{cuda_major}-py{python_version}"
 stable_cuda_range = (
-    "cuda-version>=13.0,<=13.2"  # CUDA version pins on Conda for the stable release
+    "cuda-version>=13.0,<=13.3"  # CUDA version pins on Conda for the stable release
 )
 nightly_cuda_range = (
     "cuda-version>=13.0,<=13.3"  # CUDA version pins on Conda for the nightly release
